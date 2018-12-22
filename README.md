@@ -1,7 +1,7 @@
 = What's this ? =
 
-This is a collection of KWin scripts that increase my productivity by mapping most often used operations to global hotkeys. 
-When I use Windows I use [AutoHotKey](https://www.autohotkey.com/) to do similar thing, hence the weired name.
+This is a collection of KWin scripts that increases my productivity by mapping most often used operations to global hotkeys. 
+In Windows I use [AutoHotKey](https://www.autohotkey.com/), hence the weired name.
 
 First time install:
 
@@ -9,7 +9,7 @@ First time install:
 plasmapkg2 --type kwinscript -i kwin-autohotkey
 ```
 
-After the installation `kwin-autohotkey` will show up in `System Settings > Workspace > Window Management > KWin Scripts`, enable it and then apply to activate it.
+It will be installed to `~/.local/share/kwin/scripts`, and `kwin-autohotkey` will show up in `System Settings > Workspace > Window Management > KWin Scripts`, enable it and then apply to activate it.
 
 Update:
 
