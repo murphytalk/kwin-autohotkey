@@ -1,7 +1,8 @@
 var prevActiveClient = null;
+const CONSOLE_CAPTION = "urxvt";
 
 function raiseConsole(){
-    if(prevActiveClient != null){
+    if(prevActiveClient != null && workspace.activeClient.caption === CONSOLE_CAPTION){
         workspace.activeClient = prevActiveClient;
         prevActiveClient = null;
         return;
@@ -9,8 +10,10 @@ function raiseConsole(){
     var clients = workspace.clientList();
     for (var i = 0; i<clients.length; i++){
         var client = clients[i];
-        if (client.caption === "urxvt"){
-            prevActiveClient = workspace.activeClient;
+        if (client.caption === CONSOLE_CAPTION){
+            if (workspace.activeClient.caption != CONSOLE_CAPTION){
+                prevActiveClient = workspace.activeClient;
+            }
             workspace.activeClient = client;
             break;
         }
