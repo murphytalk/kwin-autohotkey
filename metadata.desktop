@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Kwin-AutoHotKey
+Comment=My productivity scripts collection for KWin
+Icon=preferences-system-windows-script-test
+Type=Service
+
+X-Plasma-API=javascript
+X-Plasma-MainScript=code/main.js
+
+X-KDE-PluginInfo-Author=Mu Lu
+X-KDE-PluginInfo-Name=kwin-autohotkey
+X-KDE-PluginInfo-Version=0.0.1
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
