@@ -1,7 +1,7 @@
 # What's this ?
 
 This is a collection of KWin scripts that increases my productivity by mapping most often used operations to global hotkeys. 
-In Windows I use [AutoHotKey](https://www.autohotkey.com/), hence the weired name.
+In Windows I use [AutoHotKey](https://www.autohotkey.com/), hence the weird name.
 
 Install:
 ```
@@ -13,6 +13,10 @@ Update:
 ```
 plasmapkg2 --type kwinscript -u kwin-autohotkey
 ```
+# What's included
+| Hotkey | Action |
+|:------:|:------:|
+| F1     | Activate `urxvt` if it does not have focuse; Press again to re-activate the originally focused window.|
 
 # Reference
 
