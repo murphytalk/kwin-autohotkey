@@ -13,10 +13,6 @@ Update:
 ```
 plasmapkg2 --type kwinscript -u kwin-autohotkey
 ```
-# What's included
-| Hotkey | Action |
-|:------:|:------:|
-| F1     | Activate `urxvt` if it does not have focuse; Press again to re-activate the originally focused window.|
 
 # Reference
 
