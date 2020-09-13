@@ -1,21 +1,22 @@
 var prevActiveClient = {};
 
-function matchCaption(wndCap, caption, fullMatch){
-    return fullMatch ? wndCap  === caption : wndCap.indexOf(caption) != -1;
+function matchWndClass(wndClass, targetClass){
+    // wndClass is an ArrayByte obj, but using it it in indexOf automatcially cast it to string
+    return  targetClass.indexOf(wndClass) === 0;
 }
 
-function raiseWnd(caption, fullMatch){
-    if( (caption in prevActiveClient) && matchCaption(workspace.activeClient.caption, caption, fullMatch)){
-        workspace.activeClient = prevActiveClient[caption];
-        delete prevActiveClient[caption];
+function raiseWnd(targetClass){
+    if( (targetClass in prevActiveClient) && matchWndClass(workspace.activeClient.resourceClass, targetClass)){
+        workspace.activeClient = prevActiveClient[targetClass];
+        delete prevActiveClient[targetClass];
         return;
     }
     var clients = workspace.clientList();
     for (var i = 0; i<clients.length; i++){
         var client = clients[i];
-        if (matchCaption(client.caption, caption, fullMatch)){
-            if (!matchCaption(workspace.activeClient.caption, caption, fullMatch)){
-                prevActiveClient[caption] = workspace.activeClient;
+        if (matchWndClass(client.resourceClass, targetClass)){
+            if (!matchWndClass(workspace.activeClient.resourceClass, targetClass)){
+                prevActiveClient[targetClass] = workspace.activeClient;
             }
             workspace.activeClient = client;
             break;
@@ -24,17 +25,17 @@ function raiseWnd(caption, fullMatch){
 }
 
 registerShortcut ('KWin-AutoHotKey: Terminal Window', 'KWin-AutoHotKey: Terminal Window', 'Ctrl+F12', function(){
-    raiseWnd("Konsole", false);
+    raiseWnd("st-256color");
 });
 
 registerShortcut ('KWin-AutoHotKey: Emacs Window', 'KWin-AutoHotKey: Emacs Window', 'Ctrl+Alt+E', function(){
-    raiseWnd("@emacs", false);
+    raiseWnd("emacs");
 });
 
 registerShortcut ('KWin-AutoHotKey: Visual Code Window', 'KWin-AutoHotKey: Visual Code Window', 'Meta+C', function(){
-    raiseWnd("Visual Studio Code", false);
+    raiseWnd("code");
 });
 
 registerShortcut ('KWin-AutoHotKey: Firefox Window', 'KWin-AutoHotKey: Firefox Window', 'Ctrl+Alt+F', function(){
-    raiseWnd("Firefox", false);
+    raiseWnd("firefox");
 });
