@@ -24,7 +24,7 @@ function raiseWnd(targetClass){
     }
 }
 
-registerShortcut ('KWin-AutoHotKey: Terminal Window', 'KWin-AutoHotKey: Terminal Window', 'Ctrl+F12', function(){
+registerShortcut ('KWin-AutoHotKey: Terminal Window', 'KWin-AutoHotKey: Terminal Window', 'Ctrl+Alt+C', function(){
     raiseWnd("st-256color");
 });
 
@@ -34,6 +34,10 @@ registerShortcut ('KWin-AutoHotKey: Emacs Window', 'KWin-AutoHotKey: Emacs Windo
 
 registerShortcut ('KWin-AutoHotKey: Visual Code Window', 'KWin-AutoHotKey: Visual Code Window', 'Meta+C', function(){
     raiseWnd("code");
+});
+
+registerShortcut ('KWin-AutoHotKey: Microsoft Edge', 'KWin-AutoHotKey: Microsoft Edge', 'Ctrl+Alt+Q', function(){
+    raiseWnd("microsoft-edge-dev");
 });
 
 registerShortcut ('KWin-AutoHotKey: Firefox Window', 'KWin-AutoHotKey: Firefox Window', 'Ctrl+Alt+F', function(){

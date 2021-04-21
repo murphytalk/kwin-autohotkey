@@ -13,6 +13,14 @@ Update:
 ```
 plasmapkg2 --type kwinscript -u kwin-autohotkey
 ```
+To find window class, in a terminal, run
+
+```
+xprop WM_CLASS
+```
+
+and then click the window in question.
+
 
 # Reference
 
