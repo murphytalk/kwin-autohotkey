@@ -40,6 +40,6 @@ registerShortcut ('KWin-AutoHotKey: Microsoft Edge', 'KWin-AutoHotKey: Microsoft
     raiseWnd("microsoft-edge-dev");
 });
 
-registerShortcut ('KWin-AutoHotKey: Firefox Window', 'KWin-AutoHotKey: Firefox Window', 'Ctrl+Alt+F', function(){
-    raiseWnd("firefox");
-});
+//egisterShortcut ('KWin-AutoHotKey: Firefox Window', 'KWin-AutoHotKey: Firefox Window', 'Ctrl+Alt+F', function(){
+//   raiseWnd("firefox");
+//);

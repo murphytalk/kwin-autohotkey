@@ -24,7 +24,7 @@ and then click the window in question.
 
 # Reference
 
-- [KWin script tutorial](https://techbase.kde.org/Development/Tutorials/Plasma4/PackageOverview)
+- [KWin script tutorial](https://develop.kde.org/docs/plasma/kwin/)
 - [KWin script API](https://techbase.kde.org/Development/Tutorials/KWin/Scripting/API_4.9)
 - [KWin API reference](https://api.kde.org/4.x-api/kde-workspace-apidocs/kwin/html/index.html)
 - [KWin workspace API reference](https://api.kde.org/4.x-api/kde-workspace-apidocs/kwin/html/classKWin_1_1Client.html)

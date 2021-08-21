@@ -12,3 +12,4 @@ X-KDE-PluginInfo-Name=kwin-autohotkey
 X-KDE-PluginInfo-Version=0.0.1
 X-KDE-PluginInfo-Depends=
 X-KDE-PluginInfo-License=GPL
+X-KDE-ServiceTypes=KWin/Script
