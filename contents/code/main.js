@@ -37,7 +37,7 @@ registerShortcut ('KWin-AutoHotKey: Visual Code Window', 'KWin-AutoHotKey: Visua
 });
 
 registerShortcut ('KWin-AutoHotKey: Microsoft Edge', 'KWin-AutoHotKey: Microsoft Edge', 'Ctrl+Alt+Q', function(){
-    raiseWnd("microsoft-edge-dev");
+    raiseWnd("microsoft-edge-beta");
 });
 
 //egisterShortcut ('KWin-AutoHotKey: Firefox Window', 'KWin-AutoHotKey: Firefox Window', 'Ctrl+Alt+F', function(){
