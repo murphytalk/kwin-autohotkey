@@ -40,6 +40,10 @@ registerShortcut ('KWin-AutoHotKey: Microsoft Edge', 'KWin-AutoHotKey: Microsoft
     raiseWnd("microsoft-edge-beta");
 });
 
+registerShortcut ('KWin-AutoHotKey: Logseq', 'KWin-AutoHotKey: Logseq', 'Ctrl+Alt+N', function(){
+    raiseWnd("logseq");
+});
+
 //egisterShortcut ('KWin-AutoHotKey: Firefox Window', 'KWin-AutoHotKey: Firefox Window', 'Ctrl+Alt+F', function(){
 //   raiseWnd("firefox");
 //);

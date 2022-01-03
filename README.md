@@ -19,7 +19,7 @@ To find window class, in a terminal, run
 xprop WM_CLASS
 ```
 
-and then click the window in question.
+and then click the window in question. It returns two names, where the first one is windows class name to use.
 
 
 # Reference
