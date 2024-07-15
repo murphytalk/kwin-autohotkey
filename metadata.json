@@ -1,0 +1,21 @@
+{
+    "KPlugin": {
+        "Name": "Kwin-AutoHotKey",
+        "Description": "My productivity scripts collection for KWin",
+        "Icon": "preferences-system-windows",
+        
+        "Authors": [
+            {
+                "Email": "murphytalk@gmail.com",
+                "Name": "Murphytalk"
+            }
+        ],
+        "Id": "my-kwin-autohotkey",
+        "Version": "1.0",
+        "License": "GPLv3",
+        "Website": "https://github.com/username/myscript"
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js",
+    "KPackageStructure": "KWin/Script"
+}
